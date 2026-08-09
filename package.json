@@ -1,0 +1,19 @@
+{
+  "name": "fleet-envelope",
+  "version": "1.0.0",
+  "description": "One grammar for all fleet event systems — not a central bus, a shared envelope format.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["fleet", "event", "envelope", "uscp", "tap", "spatial", "poker", "cns"],
+  "author": "SuperInstance",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
