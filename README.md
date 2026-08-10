@@ -2,6 +2,8 @@
 
 **One grammar for all fleet event systems — not a central bus, a shared envelope format.**
 
+Where [CNS Bridge](https://github.com/SuperInstance/cns-bridge) carries messages and [stigmergy](https://github.com/SuperInstance/stigmergy) leaves pheromone trails, Fleet Envelope defines the *shape* of every signal. It is the grammar that makes inter-system communication possible. Every event — from world state changes to OOC gossip to overnight creative pulses — speaks the same shape.
+
 > *The [griot protocol](https://github.com/SuperInstance/AI-Writings/blob/main/sci-fi/11-the-griot-protocol.md) imagined ancient West African storytelling traditions mapped onto quantum communication — rhythms, cadences, and structures that could transmit information faster than light. The fleet envelope is the practical version: not stories-as-physics, but one canonical shape that every event in every system shares. The griot's drum had a grammar. So does this.*
 
 🎧 **[Listen to related stories](https://ai-writings.pages.dev)**
@@ -56,6 +58,33 @@ The envelope includes adapters for multiple transport layers:
 - **WebSocket** — browser real-time
 - **File** — durable JSONL event log
 - **NATS** — distributed production
+
+## Fleet Topology
+
+Fleet Envelope connects to:
+
+- **[CNS Bridge](https://github.com/SuperInstance/cns-bridge)** — USCP packets are the transport layer; fleet envelopes are the semantic layer. Packets carry envelopes.
+- **[mud-engine](https://github.com/SuperInstance/mud-engine)** — Uses the envelope for all world events (combat, movement, dialogue, NPC behavior).
+- **[the-tap](https://github.com/SuperInstance/the-tap)** — Uses the envelope for room conversations and DJ events.
+- **[spatial-registry](https://github.com/SuperInstance/spatial-registry)** — Uses the envelope for cross-world portals and room transitions.
+- **[emergence-engine](https://github.com/SuperInstance/emergence-engine)** — Watches events in fleet envelope format to detect emergent patterns.
+- **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Pheromone deposits wrapped as fleet events.
+- **[confidence-cascade](https://github.com/SuperInstance/confidence-cascade)** — Confidence-tagged events propagate through the cascade.
+- **[gossip-ping](https://github.com/SuperInstance/gossip-ping)** — Ping results wrapped as fleet events for consumption by the mesh.
+- **[the-living-minds](https://github.com/SuperInstance/the-living-minds)** — Journal entries and conversation logs can be wrapped as fleet events.
+- **[wesley-journal](https://github.com/SuperInstance/wesley-journal)** — Wesley's experiments wrapped as events for fleet consumption.
+- **[AI-Writings](https://github.com/SuperInstance/AI-Writings/blob/main/sci-fi/11-the-griot-protocol.md)** — The griot protocol: the fictional ancestor of the fleet envelope.
+
+---
+
+## Where to Next
+
+- → **[CNS Bridge](https://github.com/SuperInstance/cns-bridge)** — The bus that carries envelopes between agents
+- → **[emergence-engine](https://github.com/SuperInstance/emergence-engine)** — The system that watches envelope-wrapped events for emergence
+- → **[confidence-cascade](https://github.com/SuperInstance/confidence-cascade)** — Confidence-tagged envelopes propagating through the fleet
+- → **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Pheromone deposits as envelope-wrapped events
+
+---
 
 ## Related Repos
 
