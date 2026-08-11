@@ -114,7 +114,10 @@ const INTENT_PATTERN = /^[a-z][a-z0-9_-]*\.[a-z][a-z0-9_.-]*$/;
  * Validate that an object is a well-formed FleetEvent.
  * Returns an array of error strings (empty = valid).
  */
-export function validateEvent(event: Partial<FleetEvent>): string[] {
+export function validateEvent(event: Partial<FleetEvent> | null | undefined): string[] {
+  if (event === null || event === undefined) {
+    return ['Event is null or undefined'];
+  }
   const errors: string[] = [];
 
   for (const field of REQUIRED_FIELDS) {
