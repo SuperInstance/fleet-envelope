@@ -71,8 +71,8 @@ Fleet Envelope connects to:
 - **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Pheromone deposits wrapped as fleet events.
 - **[confidence-cascade](https://github.com/SuperInstance/confidence-cascade)** — Confidence-tagged events propagate through the cascade.
 - **[gossip-ping](https://github.com/SuperInstance/gossip-ping)** — Ping results wrapped as fleet events for consumption by the mesh.
-- **[the-living-minds](https://github.com/SuperInstance/the-living-minds)** — Journal entries and conversation logs can be wrapped as fleet events.
-- **[wesley-journal](https://github.com/SuperInstance/wesley-journal)** — Wesley's experiments wrapped as events for fleet consumption.
+- **[the-living-minds](https://github.com/SuperInstance/the-living-minds) (dead)** — Journal entries and conversation logs can be wrapped as fleet events.
+- **[wesley-journal](https://github.com/SuperInstance/wesley-journal) (dead)** — Wesley's experiments wrapped as events for fleet consumption.
 - **[AI-Writings](https://github.com/SuperInstance/AI-Writings/blob/main/sci-fi/11-the-griot-protocol.md)** — The griot protocol: the fictional ancestor of the fleet envelope.
 
 ---
